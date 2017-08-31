@@ -7,10 +7,9 @@ use Illuminate\Http\Request;
 class FirstController extends Controller
 {
     //
-    public function show($id)
+    public function show()
     {
         echo __METHOD__;
-        echo $id;
     }
     public function getPages()
     {

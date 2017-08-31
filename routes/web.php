@@ -12,18 +12,21 @@
 */
 
 
-Route::get('/', ['as' => 'home', function () {
-    return view('welcome');
-}]);
-Route::get('/about/{id}', ['uses'=>'FirstController@show', 'as'=>'name']);
-Route::get('/articles/', 'Admin\Core@getArticles');
-Route::get('/articles/{id}', 'Admin\Core@getArticle');
+Route::get('/', ['as' => 'home', 'uses'=>'Admin\IndexController@show']
+);
+Route::get('/about/', ['uses'=>'Admin\AboutController@show', 'as'=>'about']);
+Route::get('/articles/', 'Admin\Core@getArticles')->name('articles');
+Route::get('/article/{id}', ['uses'=>'Admin\Core@getArticle', 'middleware'=>[
+    'mymiddle:admin']
+])->name('article');
 // list pages
-Route::resource('/pages', 'Admin\CoreResource');
+//Route::resource('/pages', 'Admin\CoreResource');
 Route::get('/form', function () {
-
     return view('form');
 });
+Route::match(['get','post'],'/contact/{id?}', ['uses'=>'Admin\ContactController@show', 'as'=>'contact']);
+
+
 /*Route::get('/article/{id}', ['as' => 'article', function ($id) {
     echo $id;
 }]);

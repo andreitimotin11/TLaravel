@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c830c7a8557ea1ccf542608de097d0e5",
+    "content-hash": "3a8a83bacaf61b37c41e4baa5d7cb32c",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -886,12 +886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "3217b92443ae8ede1daaeec588a1d62d641beb3a"
+                "reference": "aba1bca35f80436f9105b9d4dadb822f09983c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3217b92443ae8ede1daaeec588a1d62d641beb3a",
-                "reference": "3217b92443ae8ede1daaeec588a1d62d641beb3a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/aba1bca35f80436f9105b9d4dadb822f09983c86",
+                "reference": "aba1bca35f80436f9105b9d4dadb822f09983c86",
                 "shasum": ""
             },
             "require": {
@@ -1010,7 +1010,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-08-24T22:31:53+00:00"
+            "time": "2017-08-27T09:20:20+00:00"
         },
         {
             "name": "laravel/tinker",
